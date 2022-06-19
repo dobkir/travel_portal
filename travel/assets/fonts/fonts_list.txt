@@ -1,0 +1,6 @@
+Magra Bold
+Red Hat Text Medium
+Aleo Bold
+Aleo Bold Italic
+Aleo Italic
+Aleo Regular
