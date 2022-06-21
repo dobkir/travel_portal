@@ -9,7 +9,266 @@
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <!--============ Header ============-->
+
+  <header class="header">
+    <div class="container container-header">
+      <a class="logo" href="#main" title="Travel Portal logo. Click on it to return to the heading"><span
+          class="logo-icon" role="img" aria-label=" The Logo"></span> Travel Portal</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#preview">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#steps">Plan Your Trip</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stories">Travel Stories</a>
+          </li>
+        </ul>
+        <!-- /.nav-list -->
+      </nav>
+      <!-- /.nav -->
+
+      <button class="button login-button">Login</button>
+
+    </div>
+    <!-- /.container-header -->
+
+  </header>
+  <!-- /.header -->
+
+  <!--============ Main ============-->
+
+  <main class="main" id="main">
+
+    <!--=========== Preview ===========-->
+
+    <section class="preview section" id="preview">
+      <div class="container preview__container">
+
+        <h1 class="main-title">Explore the beauty of the World</h1>
+        <p class="main-description">Recieve personalized recommendations for countries, hotels, activities and more</p>
+        <form action="/" class="search-form">
+          <input type="search" class="search-form__field" placeholder="What would you like to do?">
+          <button type="submit" class="button" aria-label="Search what would you like to do?">Start Planning</button>
+        </form>
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.preview section -->
+
+    <!--============ Steps ============-->
+
+    <section class="steps section" id="steps">
+      <div class="container steps__container">
+
+        <h2 class="section-title">3 steps to the perfect trip</h2>
+
+        <ul class="steps-list">
+
+          <li class="steps-list__step">
+            <span class="step-icon bicycle-icon" role="img" aria-label="Bicycle icon"></span>Tell us what you want to do
+          </li>
+          <!-- /.steps-list__step -->
+
+          <li class="steps-list__step">
+            <span class="step-icon calculator-icon" role="img" aria-label="Calculator icon"></span>Share us preferable
+            dates
+          </li>
+          <!-- /.steps-list__step -->
+
+          <li class="steps-list__step">
+            <span class="step-icon airplane-icon" role="img" aria-label="Airplane-icon"></span>We will give you
+            recommendations
+          </li>
+          <!-- /.steps-list__step -->
+
+        </ul>
+        <!-- /.steps-list -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.steps section -->
+
+    <!--========= Destinations =========-->
+
+    <section class="destinations section" id="destinations">
+      <div class="container destinations__container">
+
+        <h2 class="section-title">Popular destinations</h2>
+
+        <div class="carousel__container">
+
+          <ul class="carousel">
+            <li class="carousel__item" id="carousel__item_left">
+              Spain
+            </li>
+            <li class="carousel__item" id="carousel__item_active">
+              Japan
+            </li>
+            <li class="carousel__item" id="carousel__item_right">
+              USA
+            </li>
+          </ul>
+          <!-- /.carousel -->
+
+          <div class="carousel__pagination">
+            <span class="carousel__pagination-bullet" id="pagination-bullet_one" role="button"
+              aria-label="Go to slide 1"></span>
+            <span class="carousel__pagination-bullet" id="pagination-bullet_two" role="button"
+              aria-label="Go to slide 2"></span>
+            <span class="carousel__pagination-bullet" id="pagination-bullet_three" role="button"
+              aria-label="Go to slide 3"></span>
+          </div>
+          <!-- /.carousel__pagination -->
+
+          <a class="button" href="#preview" role="button"><span class="arrow-icon_right" role="img"
+              aria-label="Arrow to the right"></span>Find More</a>
+        </div>
+        <!-- /.carousel-container -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.destinations section -->
+
+    <!--=========== Stories ===========-->
+
+    <section class="stories section" id="stories">
+      <div class="container stories__container">
+
+        <h2 class="section-title">Travel stories</h2>
+
+        <ul class="stories-list">
+
+          <li class="stories-list__item">
+            <figure class="story-photo">
+              <img src="assets/img/thailand.png" alt="photo: photo from a trip to Thailand" width="400" height="250">
+              <figcaption class="story-description">
+                <h3 class="story-description__title">10 Photos of Attractive Thailand</h3>
+                <p class="story-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                  ipsum dolor sit
+                  amet, consectetur adipiscing elit... <a href="#" class="read-more">Read More</a></p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- /.stories-list__item -->
+
+          <li class="stories-list__item">
+            <figure class="story-photo">
+              <img src="assets/img/utah.png" alt="photo: photo from a trip to Canyonlands National Park, Utah"
+                width="400" height="250">
+              <figcaption class="story-description">
+                <h3 class="story-description__title">Canyonlands National Park, Utah</h3>
+                <p class="story-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                  ipsum dolor sit
+                  amet, consectetur adipiscing elit... <a href="#" class="read-more">Read More</a></p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- /.stories-list__item -->
+
+          <li class="stories-list__item">
+            <figure class="story-photo">
+              <img src="assets/img/mountains.png" alt="photo: photo from a trip from great amazing mountains"
+                width="400" height="250">
+              <figcaption class="story-description">
+                <h3 class="story-description__title">I left my heart in the Mountains!</h3>
+                <p class="story-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                  incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                  ipsum dolor
+                  sit
+                  amet, consectetur adipiscing elit... <a href="#" class="read-more">Read More</a></p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- /.stories-list__item -->
+
+          <li class="stories-list__item">
+            <figure class="story-photo">
+              <img src="assets/img/journey.png" alt="photo: photo from a big longest journey" width="400" height="250">
+              <figcaption class="story-description">
+                <h3 class="story-description__title">The Longest journey in my life!</h3>
+                <p class="story-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor
+                  incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                  ipsum dolor
+                  sit
+                  amet, consectetur adipiscing elit... <a href="#" class="read-more">Read More</a></p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- /.stories-list__item -->
+
+        </ul>
+        <!-- /.stories-list -->
+
+        <a class="button" href="#preview" role="button"><span class="arrow-icon_right" role="img"
+            aria-label="Arrow to the right"></span>See More</a>
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.stories section -->
+
+  </main>
+  <!-- /.main -->
+
+  <!--============ Footer ============-->
+
+  <footer class="footer container">
+
+    <p class="copyright">All Rights Reserved <small>&copy;</small> Travel Portal</p>
+
+    <ul class="social-links">
+      <li class="social-links_item">
+        <a class="social-link instagram-link" href="#" target="_blank"></a>
+      </li>
+      <li class="social-links_item">
+        <a class="social-link youtube-link" href="#" target="_blank"></a>
+      </li>
+      <li class="social-links_item">
+        <a class="social-link twitter-link" href="#" target="_blank"></a>
+      </li>
+    </ul>
+    <!-- /.social-links -->
+
+  </footer>
+  <!-- /.footer -->
+
 </body>
 
 </html>
