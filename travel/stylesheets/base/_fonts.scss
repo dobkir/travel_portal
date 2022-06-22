@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Magra-Bold";
+  src:
+    local("Magra-bold"),
+    local("Magra Bold"),
+    local("MagraBold"),
+    url("../assets/fonts/Magra-Bold.woff2"),
+    url("../assets/fonts/Magra-Bold.woff") format("woff"),
+    url("../assets/fonts/Magra-Bold.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RedHatText-Medium";
+  src:
+    local("Red-Hat-Text-Medium"),
+    local("Red Hat Text Medium"),
+    local("RedHatTextMedium"),
+    url("../assets/fonts/RedHatText-Medium.woff2") format("woff2"),
+    url("../assets/fonts/RedHatText-Medium.woff") format("woff"),
+    url("../assets/fonts/RedHatText-Medium.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo-Bold";
+  src:
+    local("Aleo-bold"),
+    local("Aleo Bold"),
+    local("AleoBold"),
+    url("../assets/fonts/Aleo-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Aleo-Bold.woff") format("woff"),
+    url("../assets/fonts/Aleo-Bold.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo-Bold-Italic";
+  src:
+    local("Aleo-BoldItalic"),
+    local("Aleo-Bold-italic"),
+    local("Aleo Bold Italic"),
+    local("AleoBoldItalic"),
+    url("../assets/fonts/Aleo-Bold-Italic.woff2") format("woff2"),
+    url("../assets/fonts/Aleo-Bold-Italic.woff") format("woff"),
+    url("../assets/fonts/Aleo-Bold-Italic.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aleo-Italic";
+  src:
+    local("Aleo-italic"),
+    local("Aleo Italic"),
+    local("AleoItalic"),
+    url("../assets/fonts/Aleo-Italic.woff2") format("woff2"),
+    url("../assets/fonts/Aleo-Italic.woff") format("woff"),
+    url("../assets/fonts/Aleo-Italic.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo-Regular";
+  src:
+    local("Aleo-regular"),
+    local("Aleo Regular"),
+    local("AleoRegular"),
+    url("../assets/fonts/Aleo-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Aleo-Regular.woff") format("woff"),
+    url("../assets/fonts/Aleo-Regular.ttf") format("ttf");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
