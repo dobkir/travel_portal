@@ -16,3 +16,19 @@
   'base/fonts',
   'base/typography',
   'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/navigation',
+  'layout/main/main',
+  'layout/main/preview',
+  'layout/main/steps',
+  'layout/main/destinations',
+  'layout/carousel',
+  'layout/main/stories',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
