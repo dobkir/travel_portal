@@ -2,3 +2,25 @@
  * Basic typography style for copy text
  */
 
+.button {
+  font: $button-font;
+  color: $light-color;
+
+  &_small {
+    font: $navigation-font;
+  }
+}
+
+.header {
+ color: $light-color;
+}
+
+.logo {
+  font: $logo-font;
+  color: inherit;
+}
+
+.nav-link {
+  font: $navigation-font;
+  color: inherit;
+}

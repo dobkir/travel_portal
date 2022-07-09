@@ -1,3 +1,31 @@
+/// For interactive icons .svg
+///
+@mixin mask(
+  $image-url,
+  $mask-size: cover,
+  $bg-color: $light-color,
+  $hover-color: $brand-color
+  ) {
+  // If you don't want a blue square when clicking on svg on a mobile device
+  // use the property '-webkit-tap-highlight-color'
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: $bg-color;
+  background-position: center;
+  -webkit-mask-image: url("#{$image-url}");
+  mask-image: url("#{$image-url}");
+  -webkit-mask-size: $mask-size;
+  mask-size: $mask-size;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+  }
+
+  &:active {
+    background-color: darken($brand-color, 10%);
+  }
+}
+
 /// Adaptive design breakpoints
 
 

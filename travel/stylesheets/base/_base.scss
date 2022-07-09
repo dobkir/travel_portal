@@ -17,9 +17,19 @@ html {
  * Basic styles for links
  */
 a {
+  color: $text-color;
   text-decoration: none;
 
   @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: lighten($text-color, 10%);
+  }
+
+  &:active {
+    color: darken($text-color, 10%);
+  }
 }
 
 /**
