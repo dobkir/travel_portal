@@ -24,3 +24,27 @@
   font: $navigation-font;
   color: inherit;
 }
+
+.preview {
+  color: $light-color;
+}
+
+.main-title {
+  font: $title-font;
+}
+
+.main-description {
+  font: $main-subtitle-font;
+}
+
+.search-form__field {
+  &::placeholder {
+    font: $placeholder-font;
+    color: $brand-color;
+  }
+
+  &:focus {
+    font: $placeholder-font;
+    color: $brand-color;
+  }
+}
