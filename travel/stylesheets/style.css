@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+.steps-list {
+  display: flex;
+  justify-content: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -471,6 +476,13 @@ figure {
   font: normal 700 8rem/normal "Aleo-Bold";
 }
 
+.section-title {
+  font: normal 500 4rem/normal "RedHatText-Medium";
+  color: #F2785C;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main-description {
   font: italic 700 2rem/normal "Aleo-Bold-Italic";
 }
@@ -482,6 +494,11 @@ figure {
 .search-form__field:focus {
   font: italic 400 2.4rem/normal "Aleo-Italic";
   color: #F2785C;
+}
+
+.step-description {
+  font: normal 400 2rem/normal "Aleo-Regular";
+  color: #0D606F;
 }
 
 /**
@@ -614,6 +631,38 @@ figure {
   outline: none;
   margin-bottom: 1rem;
   box-shadow: 0.4rem 0.4rem 0.5rem rgba(242, 120, 92, 0.6);
+}
+
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5rem auto 3rem;
+}
+
+.steps-list {
+  gap: 12.2rem;
+  width: 100%;
+}
+
+.steps-list__step {
+  flex-basis: 33.33%;
+}
+
+.step-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bicycle-icon,
+.calendar-icon,
+.airplane-icon {
+  border-radius: 16px;
+}
+
+.step-description {
+  margin-top: 2.8rem;
 }
 
 .button {

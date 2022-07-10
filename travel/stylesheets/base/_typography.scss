@@ -33,6 +33,13 @@
   font: $title-font;
 }
 
+.section-title {
+  font: $section-title-font;
+  color: $brand-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main-description {
   font: $main-subtitle-font;
 }
@@ -47,4 +54,9 @@
     font: $placeholder-font;
     color: $brand-color;
   }
+}
+
+.step-description {
+  font: $text-font;
+  color: $text-color;
 }
