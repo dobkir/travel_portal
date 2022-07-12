@@ -60,3 +60,9 @@
   font: $text-font;
   color: $text-color;
 }
+
+.carousel__link {
+  font: $carousel-font;
+  color: $light-color;
+  text-transform: uppercase;
+}

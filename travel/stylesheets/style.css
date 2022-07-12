@@ -1,13 +1,15 @@
-.button, .logo-icon, a {
+.button, .arrow-icon_right, .logo-icon, a {
   transition: all 0.4s ease-in-out;
 }
 
-.logo {
+.carousel,
+.carousel__pagination,
+.carousel__button, .logo {
   display: flex;
   align-items: center;
 }
 
-.search-form, .nav-list, .container-header {
+.carousel__pagination, .search-form, .nav-list, .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -501,6 +503,12 @@ figure {
   color: #0D606F;
 }
 
+.carousel__link {
+  font: normal 500 3.2rem/normal "RedHatText-Medium";
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 /**
  * Main content containers
  * 1. Make the container full-width with a maximum width
@@ -637,7 +645,7 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4.5rem auto 3rem;
+  margin: 4.5rem auto 3.2rem;
 }
 
 .steps-list {
@@ -665,10 +673,97 @@ figure {
   margin-top: 2.8rem;
 }
 
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel {
+  height: 80rem;
+  justify-content: center;
+  column-gap: 6rem;
+  margin: 1.2rem 0;
+}
+
+.carousel__item {
+  width: 80rem;
+  height: 80rem;
+  flex-shrink: 0;
+  background-color: #0D606F;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+#carousel__item_left {
+  background: url(../assets/img/spain.png) 50% 0 no-repeat;
+}
+
+#carousel__item_active {
+  background: url(../assets/img/japan_gates.png) 50% 0 no-repeat;
+}
+
+#carousel__item_right {
+  background: url(../assets/img/golden_gates.png) 50% 0 no-repeat;
+}
+
+.carousel__link {
+  position: relative;
+  left: calc(50% - 5.4rem - 33.1rem);
+  top: calc(50% - 2.1rem + 33.9rem);
+}
+
+.carousel__pagination {
+  width: 8rem;
+  margin: 1.2rem auto;
+}
+
+.carousel__pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+}
+.carousel__pagination-bullet:nth-child(2) {
+  background-color: #F2785C;
+}
+
+.carousel__button {
+  margin: 2.8rem auto;
+}
+.carousel__button:hover .arrow-icon_right, .carousel__button:focus .arrow-icon_right {
+  background-color: #12879d;
+}
+.carousel__button:active .arrow-icon_right {
+  background-color: #083941;
+}
+
+.arrow-icon_right {
+  display: inline-block;
+  width: 4rem;
+  height: 4.1rem;
+  margin-right: 1rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  background-position: center;
+  -webkit-mask-image: url("../assets/svg/arrow-right.svg");
+  mask-image: url("../assets/svg/arrow-right.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.arrow-icon_right:hover, .arrow-icon_right:focus {
+  background-color: #F2785C;
+}
+.arrow-icon_right:active {
+  background-color: #ee512d;
+}
+
 .button {
   width: 22.8rem;
   height: 5.9rem;
-  padding: 13px 32px;
+  padding: 13px 30px;
   background-color: #0D606F;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border: 1px solid transparent;
