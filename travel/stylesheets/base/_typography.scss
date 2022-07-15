@@ -66,3 +66,26 @@
   color: $light-color;
   text-transform: uppercase;
 }
+
+.story-description__title {
+  font: $section-subtitle-font;
+}
+
+.story-description__text {
+  font: $text-font;
+}
+
+.read-more {
+  font: $link-font;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.copyright {
+  font: $navigation-font;
+  color: $light-color;
+}

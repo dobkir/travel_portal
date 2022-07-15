@@ -1,15 +1,14 @@
-.button, .arrow-icon_right, .logo-icon, a {
+.arrow-icon_right, .button, .social-link, .logo-icon, a {
   transition: all 0.4s ease-in-out;
 }
 
-.carousel,
-.carousel__pagination,
-.carousel__button, .logo {
+.button-arrow, .social-links, .footer, .carousel,
+.carousel__pagination, .logo {
   display: flex;
   align-items: center;
 }
 
-.carousel__pagination, .search-form, .nav-list, .container-header {
+.footer__container, .story-photo, .carousel__pagination, .search-form, .nav-list, .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -509,6 +508,27 @@ figure {
   text-transform: uppercase;
 }
 
+.story-description__title {
+  font: normal 400 3.5rem/normal "Aleo-Regular";
+}
+
+.story-description__text {
+  font: normal 400 2rem/normal "Aleo-Regular";
+}
+
+.read-more {
+  font: normal 400 2rem/normal "Aleo-Bold";
+  text-decoration: underline;
+}
+.read-more:hover, .read-more:focus {
+  text-decoration: none;
+}
+
+.copyright {
+  font: normal 500 1.6rem/normal "RedHatText-Medium";
+  color: #ffffff;
+}
+
 /**
  * Main content containers
  * 1. Make the container full-width with a maximum width
@@ -524,10 +544,6 @@ figure {
   /* 2 */
   margin-right: auto;
   /* 2 */
-  padding-left: 120px;
-  /* 3 */
-  padding-right: 120px;
-  /* 3 */
 }
 
 .section {
@@ -566,6 +582,7 @@ figure {
 
 .container-header {
   height: 100%;
+  padding: 0 120px;
   background-color: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
@@ -646,6 +663,7 @@ figure {
   flex-direction: column;
   align-items: center;
   margin: 4.5rem auto 3.2rem;
+  padding: 0 120px;
 }
 
 .steps-list {
@@ -730,37 +748,142 @@ figure {
   background-color: #F2785C;
 }
 
-.carousel__button {
-  margin: 2.8rem auto;
+.stories__container {
+  position: relative;
+  padding-top: 1.8rem;
+  padding-bottom: 7rem;
+  background: url(../assets/img/bot_on_the_lake.png) 50% 14.4rem/contain no-repeat;
 }
-.carousel__button:hover .arrow-icon_right, .carousel__button:focus .arrow-icon_right {
-  background-color: #12879d;
-}
-.carousel__button:active .arrow-icon_right {
-  background-color: #083941;
+.stories__container:before {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  top: 14.4rem;
+  left: 0;
+  right: 0;
+  bottom: 5.5rem;
+  opacity: 0.7;
 }
 
-.arrow-icon_right {
+.stories-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 1.2rem;
+}
+
+.stories-list__item {
+  position: relative;
+  z-index: 1;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.story-photo {
+  column-gap: 4rem;
+}
+.story-photo img {
+  display: block;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
+
+.story-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-description__title {
+  margin: 0;
+}
+
+.story-description__text {
+  margin: 2.2rem 0 1rem;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 5.5rem;
+  z-index: 3;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer__container {
+  width: 58.5%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 150px;
+}
+
+.social-links {
+  align-self: flex-end;
+  column-gap: 2rem;
+}
+
+.social-link {
   display: inline-block;
-  width: 4rem;
-  height: 4.1rem;
-  margin-right: 1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.instagram-link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #ffffff;
   background-position: center;
-  -webkit-mask-image: url("../assets/svg/arrow-right.svg");
-  mask-image: url("../assets/svg/arrow-right.svg");
+  -webkit-mask-image: url("../assets/svg/instagram-icon.svg");
+  mask-image: url("../assets/svg/instagram-icon.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
 }
-.arrow-icon_right:hover, .arrow-icon_right:focus {
+.instagram-link:hover, .instagram-link:focus {
   background-color: #F2785C;
 }
-.arrow-icon_right:active {
+.instagram-link:active {
+  background-color: #ee512d;
+}
+
+.twitter-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  background-position: center;
+  -webkit-mask-image: url("../assets/svg/twitter-icon.svg");
+  mask-image: url("../assets/svg/twitter-icon.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.twitter-link:hover, .twitter-link:focus {
+  background-color: #F2785C;
+}
+.twitter-link:active {
+  background-color: #ee512d;
+}
+
+.youtube-link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  background-position: center;
+  -webkit-mask-image: url("../assets/svg/youtube-icon.svg");
+  mask-image: url("../assets/svg/youtube-icon.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.youtube-link:hover, .youtube-link:focus {
+  background-color: #F2785C;
+}
+.youtube-link:active {
   background-color: #ee512d;
 }
 
 .button {
+  position: relative;
+  z-index: 2;
   width: 22.8rem;
   height: 5.9rem;
   padding: 13px 30px;
@@ -789,6 +912,36 @@ figure {
   height: 4.1rem;
   margin-left: 2.8rem;
   padding: 10px 30px;
+}
+
+.button-arrow {
+  margin: 2.8rem auto;
+}
+.button-arrow:hover .arrow-icon_right, .button-arrow:focus .arrow-icon_right {
+  background-color: #12879d;
+}
+.button-arrow:active .arrow-icon_right {
+  background-color: #083941;
+}
+
+.arrow-icon_right {
+  display: inline-block;
+  width: 4rem;
+  height: 4.1rem;
+  margin-right: 1rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #ffffff;
+  background-position: center;
+  -webkit-mask-image: url("../assets/svg/arrow-right.svg");
+  mask-image: url("../assets/svg/arrow-right.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.arrow-icon_right:hover, .arrow-icon_right:focus {
+  background-color: #F2785C;
+}
+.arrow-icon_right:active {
+  background-color: #ee512d;
 }
 
 /*# sourceMappingURL=style.css.map */

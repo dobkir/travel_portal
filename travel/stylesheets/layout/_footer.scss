@@ -1,0 +1,45 @@
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 5.5rem;
+  z-index: 3;
+
+  @extend %flex-centered-items;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer__container {
+  @extend %flex-centered-items-space-btw;
+  width: 58.5%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 150px;
+}
+
+.social-links {
+  @extend %flex-centered-items;
+  align-self: flex-end;
+  column-gap: 2rem;
+}
+
+.social-link {
+  display: inline-block;
+  width: 3.4rem;
+  height: 3.4rem;
+
+  @extend %transition;
+}
+
+.instagram-link {
+  @include mask("../assets/svg/instagram-icon.svg");
+}
+
+.twitter-link {
+  @include mask("../assets/svg/twitter-icon.svg");
+}
+
+.youtube-link {
+  @include mask("../assets/svg/youtube-icon.svg");
+}

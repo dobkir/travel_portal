@@ -1,0 +1,62 @@
+.stories__container {
+  position: relative;
+  padding-top: 1.8rem;
+  padding-bottom: 7rem;
+
+  background: url(../assets/img/bot_on_the_lake.png) 50% 14.4rem / contain no-repeat;
+
+    &:before {
+    content: "";
+    background-color: $light-color;
+    position: absolute;
+    top: 14.4rem;
+    left: 0;
+    right: 0;
+    bottom: 5.5rem;
+    opacity: 0.7;
+  }
+}
+
+.stories-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 1.2rem;
+}
+
+.stories-list__item {
+  position: relative;
+  z-index: 1;
+
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.story-photo {
+  @extend %flex-centered-items-space-btw;
+  column-gap: 4rem;
+
+  img {
+    display: block;
+
+    filter: drop-shadow(0px 4px 4px $button-color);
+    border-radius: 16px;
+  }
+}
+
+.story-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-description__title {
+  margin: 0;
+}
+
+.story-description__text {
+  margin: 2.2rem 0 1rem;
+}
