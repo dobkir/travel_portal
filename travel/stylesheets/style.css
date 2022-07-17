@@ -548,7 +548,6 @@ figure {
 
 .section {
   border-top: 1px solid transparent;
-  background-clip: padding-box;
 }
 
 .mask-active {
@@ -750,10 +749,10 @@ figure {
 
 .stories__container {
   position: relative;
-  margin-bottom: -5.6rem;
+  margin-bottom: -5.4rem;
   padding-top: 1.8rem;
   padding-bottom: 7rem;
-  background: url(../assets/img/bot_on_the_lake.png) 50% 14.4rem/contain no-repeat;
+  background: url(../assets/img/bot_on_the_lake.png) 50% 14.4rem/cover no-repeat;
 }
 .stories__container:before {
   content: "";
@@ -762,7 +761,7 @@ figure {
   top: 14.4rem;
   left: 0;
   right: 0;
-  bottom: 5.6rem;
+  bottom: 5.8rem;
   opacity: 0.7;
 }
 

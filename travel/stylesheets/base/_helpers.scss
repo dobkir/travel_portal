@@ -16,7 +16,6 @@
 .section {
   // It's stop scrolling at the right place in the section when navigating
   border-top: 1px solid transparent;
-  background-clip: padding-box;
 }
 
 .mask-active {
