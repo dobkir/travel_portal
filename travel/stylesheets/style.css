@@ -823,8 +823,9 @@ figure {
 }
 
 .social-links {
-  align-self: flex-end;
+  align-self: center;
   column-gap: 2rem;
+  margin: 0;
 }
 
 .social-link {
