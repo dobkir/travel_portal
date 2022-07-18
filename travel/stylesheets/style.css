@@ -464,6 +464,10 @@ figure {
   color: inherit;
 }
 
+.nav-item {
+  text-align: center;
+}
+
 .nav-link {
   font: normal 500 1.6rem/normal "RedHatText-Medium";
   color: inherit;
@@ -500,6 +504,7 @@ figure {
 .step-description {
   font: normal 400 2rem/normal "Aleo-Regular";
   color: #0D606F;
+  text-align: center;
 }
 
 .carousel__link {
@@ -510,6 +515,11 @@ figure {
 
 .story-description__title {
   font: normal 400 3.5rem/normal "Aleo-Regular";
+}
+@media (max-width: 1199px) {
+  .story-description__title {
+    font-size: 3rem;
+  }
 }
 
 .story-description__text {
@@ -752,6 +762,8 @@ figure {
   margin-bottom: -5.4rem;
   padding-top: 1.8rem;
   padding-bottom: 7rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
   background: url(../assets/img/bot_on_the_lake.webp) 50% 14.4rem/cover no-repeat;
 }
 .stories__container:before {
@@ -803,6 +815,18 @@ figure {
 
 .story-description__text {
   margin: 2.2rem 0 1rem;
+}
+@media (max-width: 1399px) {
+  .story-description__text {
+    margin: 1.6rem 0 1rem;
+  }
+}
+
+.overflow-text {
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .footer {

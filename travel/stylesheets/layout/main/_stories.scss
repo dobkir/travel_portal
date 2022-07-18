@@ -3,6 +3,8 @@
   margin-bottom: -5.4rem;
   padding-top: 1.8rem;
   padding-bottom: 7rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
 
   background: url(../assets/img/bot_on_the_lake.webp) 50% 14.4rem/cover no-repeat;
 
@@ -60,4 +62,15 @@
 
 .story-description__text {
   margin: 2.2rem 0 1rem;
+
+  @include media-desktop-large {
+    margin: 1.6rem 0 1rem;
+  }
+}
+
+.overflow-text {
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
