@@ -1,4 +1,8 @@
 .nav-list {
   @extend %flex-centered-items-space-btw;
   column-gap: 4.2rem;
+
+  @include media-desktop-large {
+    column-gap: 2.4rem;
+  }
 }

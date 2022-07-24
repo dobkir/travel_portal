@@ -9,6 +9,10 @@
   &_small {
     font: $navigation-font;
   }
+
+  @include media-desktop {
+    font: $media-desktop-button-font;
+  }
 }
 
 .header {
@@ -18,6 +22,10 @@
 .logo {
   font: $logo-font;
   color: inherit;
+
+  @include media-desktop-large {
+    font: $media-desktop-logo-font;
+  }
 }
 
 .nav-item {
@@ -35,6 +43,10 @@
 
 .main-title {
   font: $title-font;
+
+  @include media-desktop {
+    font: $media-desktop-title-font;
+  }
 }
 
 .section-title {
@@ -42,6 +54,10 @@
   color: $brand-color;
   text-align: center;
   text-transform: uppercase;
+
+  @include media-desktop {
+    font: $media-desktop-section-title-font;
+  }
 }
 
 .main-description {
@@ -52,6 +68,10 @@
   &::placeholder {
     font: $placeholder-font;
     color: $brand-color;
+
+    @include media-desktop-large {
+      font: $main-subtitle-placeholder-font;
+    }
   }
 
   &:focus {

@@ -4,6 +4,10 @@
   margin-top: -9.1rem;
   padding: 12.2rem 0 0 12rem;
   background: url(../assets/img/preview-image.webp) 50% 0 no-repeat;
+
+  @include media-desktop {
+    height: 56.5rem;
+  }
 }
 
 .site-about {
@@ -16,6 +20,10 @@
 
 .main-description {
   margin: 3rem auto 3rem;
+
+  @include media-desktop {
+    margin: 2rem auto 2rem;
+  }
 }
 
 .search-form {
@@ -27,6 +35,12 @@
 
   background-color: rgba($light-color, 0.7);
   border-radius: 1.6rem;
+
+  @include media-desktop {
+    width: 85%;
+    height: 7.5rem;
+    padding: 1.6rem;
+  }
 }
 
 .search-form__field {
@@ -42,5 +56,9 @@
     outline: none;
     margin-bottom: 1rem;
     box-shadow: 0.4rem 0.4rem 0.5rem rgba($brand-color, 0.6);
+  }
+
+  @include media-desktop {
+    padding: 2.2rem 1.8rem 1.6rem;
   }
 }

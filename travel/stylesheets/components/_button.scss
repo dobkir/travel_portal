@@ -38,6 +38,19 @@
     margin-left: 2.8rem;
     padding: 10px 30px;
   }
+
+  @include media-desktop {
+    width: 20rem;
+    height: 4.8rem;
+    padding: 11px 26px;
+
+    &_small {
+      width: 16rem;
+      height: 4rem;
+      margin-left: 1.8rem;
+      padding: 6px 26px;
+    }
+  }
 }
 
 .button-arrow {
@@ -58,6 +71,10 @@
       background-color: darken($text-color, 10%);
     }
   }
+
+  @include media-desktop {
+    margin: 2rem auto;
+  }
 }
 
 .arrow-icon_right {
@@ -69,4 +86,10 @@
   @include mask("../assets/svg/arrow-right.svg", cover, $light-color, $text-color);
 
   @extend %transition;
+
+  @include media-desktop {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
 }

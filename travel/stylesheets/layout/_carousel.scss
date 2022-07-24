@@ -16,6 +16,13 @@
   justify-content: center;
   column-gap: 6rem;
   margin: 1.2rem 0;
+
+  @include media-desktop {
+    height: 60rem;
+    justify-content: center;
+    column-gap: 4rem;
+    margin: 1rem 0;
+  }
 }
 
 .carousel__item {
@@ -26,6 +33,11 @@
   background-color: $button-color;
   border-radius: 16px;
   cursor: pointer;
+
+  @include media-desktop {
+    width: 60rem;
+    height: 60rem;
+  }
 }
 
 #carousel__item_left {
@@ -44,6 +56,11 @@
   position: relative;
   left: calc(50% - 10.8rem/2 - 33.1rem);
   top: calc(50% - 4.2rem/2 + 33.9rem);
+
+  @include media-desktop {
+    left: calc(50% - 8.8rem/2 - 23.1rem);
+    top: calc(50% - 3.2rem/2 + 23.9rem);
+  }
 }
 
 .carousel__pagination {

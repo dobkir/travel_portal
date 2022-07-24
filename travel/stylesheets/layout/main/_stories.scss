@@ -73,4 +73,8 @@
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  @include media-desktop-large {
+    -webkit-line-clamp: 5;
+  }
 }
