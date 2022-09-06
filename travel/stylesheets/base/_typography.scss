@@ -98,6 +98,10 @@
   @include media-desktop {
     font-size: 3rem;
   }
+
+  @include media-tablet-landscape {
+    font-size: 2.5rem;
+  }
 }
 
 .story-description__text {

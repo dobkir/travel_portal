@@ -8,10 +8,18 @@
   @include media-desktop {
     height: 56.5rem;
   }
+
+  @include media-tablet-landscape {
+    padding: 12.2rem 0 0 12%;
+  }
 }
 
 .site-about {
   max-width: 89.2rem;
+
+  @include media-tablet-landscape {
+    max-width: 59rem;
+  }
 }
 
 .main-title {
@@ -40,6 +48,10 @@
     width: 85%;
     height: 7.5rem;
     padding: 1.6rem;
+  }
+
+  @include media-tablet-landscape {
+    width: 100%;
   }
 }
 

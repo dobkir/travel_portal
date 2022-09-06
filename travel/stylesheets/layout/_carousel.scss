@@ -23,6 +23,12 @@
     column-gap: 4rem;
     margin: 1rem 0;
   }
+
+  @include media-tablet-landscape {
+    height: 40rem;
+    justify-content: center;
+    column-gap: 3rem;
+  }
 }
 
 .carousel__item {
@@ -37,6 +43,11 @@
   @include media-desktop {
     width: 60rem;
     height: 60rem;
+  }
+
+  @include media-tablet-landscape {
+    width: 40rem;
+    height: 40rem;
   }
 }
 
@@ -60,6 +71,11 @@
   @include media-desktop {
     left: calc(50% - 8.8rem/2 - 23.1rem);
     top: calc(50% - 3.2rem/2 + 23.9rem);
+  }
+
+  @include media-tablet-landscape {
+    left: calc(50% - 7.6rem/2 - 13.1rem);
+    top: calc(50% - 2.2rem/2 + 13.9rem);
   }
 }
 

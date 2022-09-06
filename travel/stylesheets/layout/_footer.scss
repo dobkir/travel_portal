@@ -12,13 +12,18 @@
 
 .footer__container {
   @extend %flex-centered-items-space-btw;
-  width: 58.5%;
+  width: 58.8%;
   margin-right: 0;
   margin-left: 0;
-  padding-right: 150px;
+  padding-right: 120px;
 
   @include media-desktop {
     width: 61%;
+  }
+
+  @include media-tablet-landscape {
+    width: 64%;
+    padding-right: 12%;
   }
 }
 
@@ -27,6 +32,11 @@
   align-self: center;
   column-gap: 2rem;
   margin: 0;
+
+  @include media-tablet-landscape {
+    margin-left: 1.2rem;
+    column-gap: 1.4rem;
+  }
 }
 
 .social-link {
